@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+    padding: 23px;
+    background-color: skyblue;
+    color: white;
+}
+
+input{
+    width: 60px;
+    background-color: green;
+    color: white;
+    border: 3px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.calculadora_financeira{
+    width: 300px;
+    height: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#limpar{
+    width: 283.5px;
+    border: 3px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: red;
+}
+
+#confirmar{
+    width: 283.5px;
+    border: 3px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: blue;
+}
+
+#total{
+    width: 240px;
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: skyblue;
+}
+
+#display{
+    width: 240px;
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 20px;
+}
