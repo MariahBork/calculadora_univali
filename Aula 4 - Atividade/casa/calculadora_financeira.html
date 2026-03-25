@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,49 +7,28 @@
     <link rel="stylesheet" href="./calculadora_financeira.css">
 </head>
 <body>
-    <h1> Calculadora </h1>
+    <h1> Calculadora Financeira </h1>
     <div class="calculadora_financeira" id="calculadora_financeira">
         <p>Qual é o objetivo financeiro (valor que deseja juntar)?</p>
-        <input id="display" type="text"><br>
-        <p>Qual é o valor inicial da poupança?</p>
-        <input id="display" type="text"><br>
-        <p>Quanto o usuário pretende depositar mensalmente (valor fixo)?</p>
-        <input id="display" type="text"><br>
-        <p>O juros mensal?</p>
-        <input id="display" type="text"><br><br>
-
-        <p>TOTAL</p>
-        <input id="total" type="text"><br><br>
-
+        <input id="objetivo" type="number" class="campo" placeholder="R$ 0,00" step="0.01" min="0.01"><br>
         
-        <input type="button" value="1" onclick="setNumero(this.value)"> 
-        <input type="button" value="2" onclick="setNumero(this.value)">
-        <input type="button" value="3" onclick="setNumero(this.value)">
-        <input type="button" value="+" onclick="setNumero(this.value)">
-        <br><br>
+        <p>Qual é o valor inicial da poupança?</p>
+        <input id="valorInicial" type="number" class="campo" placeholder="R$ 0,00" step="0.01" min="0"><br>
+        
+        <p>Quanto o usuário pretende depositar mensalmente (valor fixo)?</p>
+        <input id="depositoMensal" type="number" class="campo" placeholder="R$ 0,00" step="0.01" min="0.01"><br>
+        
+        <p>Qual é a taxa de juros mensal? (em %)</p>
+        <input id="jurosMensal" type="number" class="campo" placeholder="Ex: 0.5" step="0.01" min="0.01"><br><br>
 
-        <input type="button" value="4" onclick="setNumero(this.value)">
-        <input type="button" value="5" onclick="setNumero(this.value)">
-        <input type="button" value="6" onclick="setNumero(this.value)">
-        <input type="button" value="-" onclick="setNumero(this.value)">
-        <br><br>
+        <p>RESULTADO</p>
+        <input id="total" type="text" readonly class="campo-resultado"><br><br>
 
-        <input type="button" value="7" onclick="setNumero(this.value)">
-        <input type="button" value="8" onclick="setNumero(this.value)">
-        <input type="button" value="9" onclick="setNumero(this.value)">
-        <input type="button" value="*" onclick="setNumero(this.value)">
-        <br><br>
-
-        <input type="button" value="/" onclick="setNumero(this.value)">
-        <input type="button" value="0" onclick="setNumero(this.value)">
-        <input type="button" value="." onclick="setNumero(this.value)">
-        <input type="button" value="=" id="igual" onclick="setIgual(this.value)">
-        <br><br>
-
-        <input type="button" value="Confirmar" id="confirmar" onclick="setIgual(this.value)"><br>
-        <input type="button" value="Limpar" id="limpar" onclick="setIgual(this.value)">
+        <div class="botoes">
+            <input type="button" value="Calcular" id="calcular" onclick="calcularEconomia()">
+            <input type="button" value="Limpar" id="limpar" onclick="limparTudo()">
+        </div>
     </div>
     <script src="./calculadora_financeira.js"></script>
-    
 </body>
 </html>
